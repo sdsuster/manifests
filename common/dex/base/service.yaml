@@ -9,5 +9,9 @@ spec:
     port: 5556
     protocol: TCP
     targetPort: 5556
+  - name: dex-grpc
+    port: 5557
+    protocol: TCP
+    targetPort: 5557
   selector:
     app: dex
