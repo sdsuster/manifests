@@ -15,14 +15,18 @@ data:
         spec:
           containers:
             - name: training-container
+<<<<<<< HEAD
               image: docker.io/kubeflowkatib/mxnet-mnist:v0.16.0
+=======
+              image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
+>>>>>>> origin/v.1.9.1-branch
               command:
                 - "python3"
-                - "/opt/mxnet-mnist/mnist.py"
-                - "--batch-size=64"
+                - "/opt/pytorch-mnist/mnist.py"
+                - "--epochs=1"
+                - "--batch-size=16"
                 - "--lr=${trialParameters.learningRate}"
-                - "--num-layers=${trialParameters.numberLayers}"
-                - "--optimizer=${trialParameters.optimizer}"
+                - "--momentum=${trialParameters.momentum}"
           restartPolicy: Never
   # For ConfigMap templates double quotes must set in commands to correct parse JSON parameters in Trial Template (e.g nn_config, architecture)
   enasCPUTemplate: |-
@@ -33,7 +37,11 @@ data:
         spec:
           containers:
             - name: training-container
+<<<<<<< HEAD
               image: docker.io/kubeflowkatib/enas-cnn-cifar10-cpu:v0.16.0
+=======
+              image: docker.io/kubeflowkatib/enas-cnn-cifar10-cpu:v0.17.0
+>>>>>>> origin/v.1.9.1-branch
               command:
                 - python3
                 - -u
@@ -54,7 +62,11 @@ data:
             spec:
               containers:
                 - name: pytorch
+<<<<<<< HEAD
                   image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.16.0
+=======
+                  image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
+>>>>>>> origin/v.1.9.1-branch
                   command:
                     - "python3"
                     - "/opt/pytorch-mnist/mnist.py"
@@ -68,7 +80,11 @@ data:
             spec:
               containers:
                 - name: pytorch
+<<<<<<< HEAD
                   image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.16.0
+=======
+                  image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
+>>>>>>> origin/v.1.9.1-branch
                   command:
                     - "python3"
                     - "/opt/pytorch-mnist/mnist.py"

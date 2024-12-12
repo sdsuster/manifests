@@ -29,9 +29,10 @@ rules:
 - apiGroups:
   - ''
   resources:
-  - namespaces
+  - scheduledworkflows
+  - workflows
   verbs:
-  - get
+  - report
 - apiGroups:
   - tekton.dev
   resources:
