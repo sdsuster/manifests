@@ -15,11 +15,7 @@ data:
         spec:
           containers:
             - name: training-container
-<<<<<<< HEAD
-              image: docker.io/kubeflowkatib/mxnet-mnist:v0.16.0
-=======
               image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
->>>>>>> origin/v.1.9.1-branch
               command:
                 - "python3"
                 - "/opt/pytorch-mnist/mnist.py"
@@ -37,11 +33,7 @@ data:
         spec:
           containers:
             - name: training-container
-<<<<<<< HEAD
-              image: docker.io/kubeflowkatib/enas-cnn-cifar10-cpu:v0.16.0
-=======
               image: docker.io/kubeflowkatib/enas-cnn-cifar10-cpu:v0.17.0
->>>>>>> origin/v.1.9.1-branch
               command:
                 - python3
                 - -u
@@ -62,11 +54,7 @@ data:
             spec:
               containers:
                 - name: pytorch
-<<<<<<< HEAD
-                  image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.16.0
-=======
                   image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
->>>>>>> origin/v.1.9.1-branch
                   command:
                     - "python3"
                     - "/opt/pytorch-mnist/mnist.py"
@@ -80,11 +68,7 @@ data:
             spec:
               containers:
                 - name: pytorch
-<<<<<<< HEAD
-                  image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.16.0
-=======
                   image: docker.io/kubeflowkatib/pytorch-mnist-cpu:v0.17.0
->>>>>>> origin/v.1.9.1-branch
                   command:
                     - "python3"
                     - "/opt/pytorch-mnist/mnist.py"
